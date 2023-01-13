@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "f11a2d50-8683-467a-b4a9-d1bb22839608",
+		"name": "_MinimalAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8119658"
+	},
+	"item": [
+		{
+			"name": "Add Developer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":\"{{$guid}}\",\r\n    \"fullName\":\"Forest Laurenceton\",\r\n    \"languages\":\"C#, Go, Python, T-SQL\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5015/Developers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5015",
+					"path": [
+						"Developers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Developer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \r\n        \"Id\": \"12d28744-aa48-4fc4-9634-37f9b002ea58\",\r\n        \"fullName\": \"ZZZZZZZZZZZZZZZZ\",\r\n        \"languages\": \"C#, Go, Python, T-SQL\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5015/Developers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5015",
+					"path": [
+						"Developers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Developer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \r\n        \"Id\": \"c682755a-c6f2-4ae4-9dd4-f0c62df5bf7a\",\r\n        \"fullName\": \"ZZZZZZZZZZZZZZZZ\",\r\n        \"languages\": \"C#, Go, Python, T-SQL\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5015/Developers/12d28744-aa48-4fc4-9634-37f9b002ea58",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5015",
+					"path": [
+						"Developers",
+						"12d28744-aa48-4fc4-9634-37f9b002ea58"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Developers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":1,\r\n    \"FullName\":\"Forest Laurenceton\",\r\n    \"Languages\":\"C#, Go, Python, T-SQL\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5015/Developers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5015",
+					"path": [
+						"Developers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Developer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":1,\r\n    \"FullName\":\"Forest Laurenceton\",\r\n    \"Languages\":\"C#, Go, Python, T-SQL\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5015/Developers/df9b7b99-a059-4eb0-be95-c58a4d1fca85",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5015",
+					"path": [
+						"Developers",
+						"df9b7b99-a059-4eb0-be95-c58a4d1fca85"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
